@@ -63,6 +63,8 @@ body::before{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;
 .nb:hover{color:var(--text);}
 .nb.active{color:var(--white);}
 .nb.active::after{left:0;right:0;}
+a.rules-link{text-decoration:none;color:var(--muted);}
+a.rules-link:hover{color:var(--blue-l);}
 .live-pill{display:flex;align-items:center;gap:6px;font-family:'Share Tech Mono',monospace;font-size:10px;
   letter-spacing:2px;color:var(--success);border:1px solid rgba(34,217,138,.3);padding:4px 12px;
   background:rgba(34,217,138,.05);margin-left:24px;}
@@ -263,40 +265,37 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
   <button class='nb active' onclick='showTab("current",this)'>Current Tournament</button>
   <button class='nb' onclick='showTab("upcoming",this)'>Upcoming</button>
   <button class='nb' onclick='showTab("archive",this)'>Archive</button>
+  <a class='nb rules-link' href='https://motioncommunity.github.io/official-rules/' target='_blank' rel='noopener'>Rules ↗</a>
   <div class='live-pill'><div class='live-dot'></div>LIVE</div>
 </nav>
 
 <section class='sec active' id='tab-current'>
 <div class='tourn-hero'>
-  <div><div class='tourn-name'>Motion Inaugural 3v3</div></div>
+  <div><div class='tourn-name'>Q1 Inaugural 2v2</div></div>
   <div class='pills'>
     <span class='pill'>SingleElimination</span>
-    <span class='pill'>7 games</span>
-    <span class='pill'>23 players</span>
-    <span class='pill'>2 teams</span>
+    <span class='pill'>3 games</span>
+    <span class='pill'>12 players</span>
+    <span class='pill'>1 teams</span>
   </div>
 </div>
 <div class='sh'>Tournament Highlights</div>
 <div class='cards'>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Top Motion Rating</div><div class='c-val'>557</div><div class='c-who'>NaNdO_-98</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Goals</div><div class='c-val'>16</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Saves</div><div class='c-val'>10</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Assists</div><div class='c-val'>8</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Demos</div><div class='c-val'>8</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Total Games</div><div class='c-val'>7</div><div class='c-who'>This tournament</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Top Motion Rating</div><div class='c-val'>472</div><div class='c-who'>ψCancer</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Goals</div><div class='c-val'>5</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Saves</div><div class='c-val'>5</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Assists</div><div class='c-val'>3</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Demos</div><div class='c-val'>2</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Total Games</div><div class='c-val'>3</div><div class='c-who'>This tournament</div></div>
 </div>
 
 <div class='sh'>Bracket</div>
-<div class='bwrap'><div class='bracket'><div class='bround'><div class='bround-label'>Final</div><div class='bround-matchups'><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>TEST 1</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>TEST 2</span><span class='mu-score'>0</span></div>
-</div></div></div></div></div>
+<div class='bwrap'><p style='color:var(--tx3);font-family:Share Tech Mono,monospace;letter-spacing:2px;font-size:11px;padding:20px 0'>BRACKET NOT YET SET UP</p></div>
 <div class='sh'>Motion Rating™ Leaderboard</div>
 <div class='fbar'>
   <input id='ps' type='text' placeholder='Search player...' oninput='filterLb()'>
   <select id='tmf' onchange='filterLb()'>
-    <option value=''>All Teams</option><option value='TEST 1'>TEST 1</option><option value='TEST 2'>TEST 2</option>
+    <option value=''>All Teams</option><option value='test'>test</option>
   </select>
 </div>
 <div class='tw'>
@@ -327,56 +326,17 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='rank gold'>01</td>
 <td><span class='pname'>Uncle Rico</span></td>
 <td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>438</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>16</td><td class='num'>8</td><td class='num'>10</td>
-<td class='num'>29</td><td class='num'>55.2%</td>
-<td class='num'>2.29</td><td class='num'>1.43</td><td class='num'>624</td>
-<td class='num'>8</td><td class='num'>0</td><td class='num pos'>+8</td>
-<td class='num'>2</td><td class='num'>29%</td>
-<td class='num'>5W 2L</td><td class='num'>71%</td>
-<td class='dim'>7</td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>367</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>5</td><td class='num'>3</td><td class='num'>5</td>
+<td class='num'>10</td><td class='num'>50%</td>
+<td class='num'>1.67</td><td class='num'>1.67</td><td class='num'>525</td>
+<td class='num'>2</td><td class='num'>0</td><td class='num pos'>+2</td>
+<td class='num'>1</td><td class='num'>33%</td>
+<td class='num'>2W 1L</td><td class='num'>67%</td>
+<td class='dim'>3</td>
 </tr>
 <tr class='silver-row'>
 <td class='rank silver'>02</td>
-<td><span class='pname'>Hshskksh</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>380</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>4</td><td class='num'>2</td><td class='num'>2</td>
-<td class='num'>9</td><td class='num'>44.4%</td>
-<td class='num'>2.00</td><td class='num'>1.00</td><td class='num'>559</td>
-<td class='num'>3</td><td class='num'>0</td><td class='num pos'>+3</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>1W 1L</td><td class='num'>50%</td>
-<td class='dim'>2</td>
-</tr>
-<tr class='bronze-row'>
-<td class='rank bronze'>03</td>
-<td><span class='pname'>NaNdO_-98</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>557</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
-<td class='hi'>2</td><td class='num'>2</td><td class='num'>3</td>
-<td class='num'>5</td><td class='num'>40%</td>
-<td class='num'>2.00</td><td class='num'>3.00</td><td class='num'>925</td>
-<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>04</td>
-<td><span class='pname'>Topsy_CriT</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>509</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
-<td class='hi'>3</td><td class='num'>1</td><td class='num'>1</td>
-<td class='num'>6</td><td class='num'>50%</td>
-<td class='num'>3.00</td><td class='num'>1.00</td><td class='num'>721</td>
-<td class='num'>3</td><td class='num'>0</td><td class='num pos'>+3</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>05</td>
 <td><span class='pname'>ψCancer</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#6bcb77'>472</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
@@ -388,21 +348,8 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='num'>1W 0L</td><td class='num'>100%</td>
 <td class='dim'>1</td>
 </tr>
-<tr class=''>
-<td class='rank'>06</td>
-<td><span class='pname'>ESCANOR</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>186</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>2</td><td class='num'>0</td><td class='num'>1</td>
-<td class='num'>5</td><td class='num'>40%</td>
-<td class='num'>1.00</td><td class='num'>0.50</td><td class='num'>319</td>
-<td class='num'>2</td><td class='num'>0</td><td class='num pos'>+2</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>1W 1L</td><td class='num'>50%</td>
-<td class='dim'>2</td>
-</tr>
-<tr class=''>
-<td class='rank'>07</td>
+<tr class='bronze-row'>
+<td class='rank bronze'>03</td>
 <td><span class='pname'>AsianCake.</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#4d96ff'>378</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
@@ -415,33 +362,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>08</td>
-<td><span class='pname'>oakX.</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>492</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
-<td class='hi'>2</td><td class='num'>2</td><td class='num'>2</td>
-<td class='num'>2</td><td class='num'>100%</td>
-<td class='num'>2.00</td><td class='num'>2.00</td><td class='num'>609</td>
-<td class='num'>2</td><td class='num'>0</td><td class='num pos'>+2</td>
-<td class='num'>1</td><td class='num'>100%</td>
-<td class='num'>1W 0L</td><td class='num'>100%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>09</td>
-<td><span class='pname'>mello</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>344</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>2</td><td class='num'>0</td><td class='num'>1</td>
-<td class='num'>3</td><td class='num'>66.7%</td>
-<td class='num'>2.00</td><td class='num'>1.00</td><td class='num'>569</td>
-<td class='num'>1</td><td class='num'>0</td><td class='num pos'>+1</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>1W 0L</td><td class='num'>100%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>10</td>
+<td class='rank'>04</td>
 <td><span class='pname'>Exlevent</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#4d96ff'>365</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
@@ -454,7 +375,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>11</td>
+<td class='rank'>05</td>
 <td><span class='pname'>cant.score.opens</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#4d96ff'>373</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
@@ -467,33 +388,20 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>12</td>
-<td><span class='pname'>Sassy.</span></td>
+<td class='rank'>06</td>
+<td><span class='pname'>ESCANOR</span></td>
 <td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>411</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>2</td><td class='num'>2</td><td class='num'>1</td>
-<td class='num'>2</td><td class='num'>100%</td>
-<td class='num'>2.00</td><td class='num'>1.00</td><td class='num'>454</td>
-<td class='num'>1</td><td class='num'>0</td><td class='num pos'>+1</td>
-<td class='num'>1</td><td class='num'>100%</td>
-<td class='num'>1W 0L</td><td class='num'>100%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>13</td>
-<td><span class='pname'>ˆˆ.tman</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>280</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>1</td><td class='num'>0</td><td class='num'>2</td>
-<td class='num'>2</td><td class='num'>50%</td>
-<td class='num'>1.00</td><td class='num'>2.00</td><td class='num'>427</td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>336</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>2</td><td class='num'>0</td><td class='num'>1</td>
+<td class='num'>3</td><td class='num'>66.7%</td>
+<td class='num'>2.00</td><td class='num'>1.00</td><td class='num'>482</td>
 <td class='num'>2</td><td class='num'>0</td><td class='num pos'>+2</td>
 <td class='num'>0</td><td class='num'>0%</td>
 <td class='num'>1W 0L</td><td class='num'>100%</td>
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>14</td>
+<td class='rank'>07</td>
 <td><span class='pname'>Ř93Ĝ</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>208</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -506,7 +414,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>15</td>
+<td class='rank'>08</td>
 <td><span class='pname'>urbaybrae</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>241</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -519,7 +427,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>16</td>
+<td class='rank'>09</td>
 <td><span class='pname'>SpeedTumor</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>198</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -532,7 +440,20 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>17</td>
+<td class='rank'>10</td>
+<td><span class='pname'>Hshskksh</span></td>
+<td><span class='dim'>—</span></td>
+<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>209</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
+<td class='hi'>1</td><td class='num'>0</td><td class='num'>1</td>
+<td class='num'>3</td><td class='num'>33.3%</td>
+<td class='num'>1.00</td><td class='num'>1.00</td><td class='num'>294</td>
+<td class='num'>2</td><td class='num'>0</td><td class='num pos'>+2</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>11</td>
 <td><span class='pname'>Slingin_Six</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>177</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -545,33 +466,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>18</td>
-<td><span class='pname'>big motion</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>78</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>0</td><td class='num'>0</td><td class='num'>1</td>
-<td class='num'>3</td><td class='num'>0%</td>
-<td class='num'>0.00</td><td class='num'>1.00</td><td class='num'>188</td>
-<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>19</td>
-<td><span class='pname'>collabing with</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>45</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
-<td class='num'>3</td><td class='num'>0%</td>
-<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>174</td>
-<td class='num'>1</td><td class='num'>0</td><td class='num pos'>+1</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>20</td>
+<td class='rank'>12</td>
 <td><span class='pname'>Xnvy</span></td>
 <td><span class='dim'>—</span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>22</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -581,45 +476,6 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
 <td class='num'>0</td><td class='num'>0%</td>
 <td class='num'>1W 0L</td><td class='num'>100%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>21</td>
-<td><span class='pname'>Drii</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>30</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
-<td class='num'>1</td><td class='num'>0%</td>
-<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>98</td>
-<td class='num'>1</td><td class='num'>0</td><td class='num pos'>+1</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>22</td>
-<td><span class='pname'>notion.</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>17</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
-<td class='num'>1</td><td class='num'>0%</td>
-<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>86</td>
-<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class=''>
-<td class='rank'>23</td>
-<td><span class='pname'>Scout</span></td>
-<td><span class='dim'>—</span></td>
-<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>0</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
-<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>0</td>
-<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>0W 1L</td><td class='num'>0%</td>
 <td class='dim'>1</td>
 </tr></tbody>
 </table></div></section>
@@ -644,7 +500,7 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 
 <footer>
   <div class='ft-logo'>MOTI<span>ON</span></div>
-  <div class='ft-meta'>Motion Rating™ &nbsp;·&nbsp; Updated March 12, 2026 · 01:43 UTC &nbsp;·&nbsp; Motion Tournament Series</div>
+  <div class='ft-meta'>Motion Rating™ &nbsp;·&nbsp; Updated March 12, 2026 · 15:43 UTC &nbsp;·&nbsp; Motion Tournament Series</div>
 </footer>
 
 <script>
