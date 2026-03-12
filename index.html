@@ -155,12 +155,13 @@ td.neg{color:var(--danger);font-weight:600;}
 
 /* ── BRACKET ── */
 .bwrap{overflow-x:auto;padding-bottom:24px;margin-bottom:52px;}
-.bracket{display:flex;gap:0;min-width:max-content;}
-.bround{display:flex;flex-direction:column;justify-content:space-around;min-width:250px;}
+.bracket{display:flex;gap:0;min-width:max-content;align-items:stretch;}
+.bround{display:flex;flex-direction:column;min-width:250px;}
+.bround-matchups{display:flex;flex-direction:column;flex:1;justify-content:space-around;}
 .bround-label{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;
   color:var(--blue-l);text-transform:uppercase;text-align:center;padding:11px;
   background:rgba(21,101,255,.05);
-  border-top:1px solid var(--border);border-bottom:2px solid var(--blue-l);margin-bottom:14px;}
+  border-top:1px solid var(--border);border-bottom:2px solid var(--blue-l);margin-bottom:0;}
 .mu{background:var(--card);border:1px solid var(--border);margin:7px 8px;overflow:hidden;transition:border-color .2s;}
 .mu:hover{border-color:rgba(21,101,255,.3);}
 .mu.done{border-color:rgba(21,101,255,.22);}
@@ -267,63 +268,35 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 
 <section class='sec active' id='tab-current'>
 <div class='tourn-hero'>
-  <div><div class='tourn-name'>aasdfg</div></div>
+  <div><div class='tourn-name'>Motion Inaugural 3v3</div></div>
   <div class='pills'>
     <span class='pill'>SingleElimination</span>
-    <span class='pill'>1 games</span>
-    <span class='pill'>4 players</span>
-    <span class='pill'>10 teams</span>
+    <span class='pill'>4 games</span>
+    <span class='pill'>15 players</span>
+    <span class='pill'>2 teams</span>
   </div>
 </div>
 <div class='sh'>Tournament Highlights</div>
 <div class='cards'>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Top Motion Rating</div><div class='c-val'>316</div><div class='c-who'>ESCANOR</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Goals</div><div class='c-val'>2</div><div class='c-who'>ESCANOR</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Saves</div><div class='c-val'>2</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Assists</div><div class='c-val'>1</div><div class='c-who'>Uncle Rico</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Demos</div><div class='c-val'>0</div><div class='c-who'>ESCANOR</div></div>
-  <div class='card'><div class='card-glow'></div><div class='c-label'>Total Games</div><div class='c-val'>1</div><div class='c-who'>This tournament</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Top Motion Rating</div><div class='c-val'>557</div><div class='c-who'>NaNdO_-98</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Goals</div><div class='c-val'>8</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Saves</div><div class='c-val'>8</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Assists</div><div class='c-val'>6</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Most Demos</div><div class='c-val'>0</div><div class='c-who'>Uncle Rico</div></div>
+  <div class='card'><div class='card-glow'></div><div class='c-label'>Total Games</div><div class='c-val'>4</div><div class='c-who'>This tournament</div></div>
 </div>
 
 <div class='sh'>Bracket</div>
-<div class='bwrap'><div class='bracket'><div class='bround'><div class='bround-label'>Round 1</div><div class='mu '>
+<div class='bwrap'><div class='bracket'><div class='bround'><div class='bround-label'>Final</div><div class='bround-matchups'><div class='mu '>
 <div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>ahah</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>ahah</span><span class='mu-score'>0</span></div>
-</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>ahah</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>ahah</span><span class='mu-score'>0</span></div>
-</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>ahah</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>ahh</span><span class='mu-score'>0</span></div>
-</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>ahhhah</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>ahhha</span><span class='mu-score'>0</span></div>
-</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>ahahahhahahh</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>ahahah</span><span class='mu-score'>0</span></div>
-</div></div><div class='bround'><div class='bround-label'>Round 2</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-</div></div><div class='bround'><div class='bround-label'>Final</div><div class='mu '>
-<div class='mu-fmt'>Best of 3</div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-<div class='mu-team '><span class='mu-name'>TBD</span><span class='mu-score'>0</span></div>
-</div></div></div></div>
+<div class='mu-team '><span class='mu-name'>TEST 1</span><span class='mu-score'>0</span></div>
+<div class='mu-team '><span class='mu-name'>TEST 2</span><span class='mu-score'>0</span></div>
+</div></div></div></div></div>
 <div class='sh'>Motion Rating™ Leaderboard</div>
 <div class='fbar'>
   <input id='ps' type='text' placeholder='Search player...' oninput='filterLb()'>
   <select id='tmf' onchange='filterLb()'>
-    <option value=''>All Teams</option><option value='ahah'>ahah</option><option value='ahah'>ahah</option><option value='ahah'>ahah</option><option value='ahah'>ahah</option><option value='ahah'>ahah</option><option value='ahh'>ahh</option><option value='ahhhah'>ahhhah</option><option value='ahhha'>ahhha</option><option value='ahahahhahahh'>ahahahhahahh</option><option value='ahahah'>ahahah</option>
+    <option value=''>All Teams</option><option value='TEST 1'>TEST 1</option><option value='TEST 2'>TEST 2</option>
   </select>
 </div>
 <div class='tw'>
@@ -352,6 +325,110 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 </tr></thead>
 <tbody><tr class='gold-row'>
 <td class='rank gold'>01</td>
+<td><span class='pname'>Uncle Rico</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>451</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
+<td class='hi'>8</td><td class='num'>6</td><td class='num'>8</td>
+<td class='num'>16</td><td class='num'>50%</td>
+<td class='num'>2.00</td><td class='num'>2.00</td><td class='num'>681</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>3W 1L</td><td class='num'>75%</td>
+<td class='dim'>4</td>
+</tr>
+<tr class='silver-row'>
+<td class='rank silver'>02</td>
+<td><span class='pname'>Hshskksh</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>365</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>4</td><td class='num'>2</td><td class='num'>2</td>
+<td class='num'>9</td><td class='num'>44.4%</td>
+<td class='num'>2.00</td><td class='num'>1.00</td><td class='num'>559</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>1W 1L</td><td class='num'>50%</td>
+<td class='dim'>2</td>
+</tr>
+<tr class='bronze-row'>
+<td class='rank bronze'>03</td>
+<td><span class='pname'>NaNdO_-98</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>557</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
+<td class='hi'>2</td><td class='num'>2</td><td class='num'>3</td>
+<td class='num'>5</td><td class='num'>40%</td>
+<td class='num'>2.00</td><td class='num'>3.00</td><td class='num'>925</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>04</td>
+<td><span class='pname'>Topsy_CriT</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>479</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
+<td class='hi'>3</td><td class='num'>1</td><td class='num'>1</td>
+<td class='num'>6</td><td class='num'>50%</td>
+<td class='num'>3.00</td><td class='num'>1.00</td><td class='num'>721</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>05</td>
+<td><span class='pname'>&#207;ˆCancer</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#6bcb77'>472</span><span class='mr-tag' style='color:#6bcb77;border:1px solid #6bcb7755;background:#6bcb7712'>SOLID</span></span></td>
+<td class='hi'>3</td><td class='num'>1</td><td class='num'>1</td>
+<td class='num'>4</td><td class='num'>75%</td>
+<td class='num'>3.00</td><td class='num'>1.00</td><td class='num'>650</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>1W 0L</td><td class='num'>100%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>06</td>
+<td><span class='pname'>AsianCake.</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>368</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>1</td><td class='num'>3</td><td class='num'>1</td>
+<td class='num'>5</td><td class='num'>20%</td>
+<td class='num'>1.00</td><td class='num'>1.00</td><td class='num'>610</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>1W 0L</td><td class='num'>100%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>07</td>
+<td><span class='pname'>Exlevent</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>365</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>2</td><td class='num'>0</td><td class='num'>2</td>
+<td class='num'>5</td><td class='num'>40%</td>
+<td class='num'>2.00</td><td class='num'>2.00</td><td class='num'>566</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>08</td>
+<td><span class='pname'>cant.score.opens</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>373</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
+<td class='hi'>1</td><td class='num'>1</td><td class='num'>3</td>
+<td class='num'>1</td><td class='num'>100%</td>
+<td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>514</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>09</td>
 <td><span class='pname'>ESCANOR</span></td>
 <td><span class='ttag'></span></td>
 <td><span class='mr'><span class='mr-num' style='color:#4d96ff'>316</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
@@ -363,21 +440,8 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='num'>1W 0L</td><td class='num'>100%</td>
 <td class='dim'>1</td>
 </tr>
-<tr class='silver-row'>
-<td class='rank silver'>02</td>
-<td><span class='pname'>Uncle Rico</span></td>
-<td><span class='ttag'></span></td>
-<td><span class='mr'><span class='mr-num' style='color:#4d96ff'>302</span><span class='mr-tag' style='color:#4d96ff;border:1px solid #4d96ff55;background:#4d96ff12'>AVERAGE</span></span></td>
-<td class='hi'>1</td><td class='num'>1</td><td class='num'>2</td>
-<td class='num'>4</td><td class='num'>25%</td>
-<td class='num'>1.00</td><td class='num'>2.00</td><td class='num'>473</td>
-<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
-<td class='num'>0</td><td class='num'>0%</td>
-<td class='num'>1W 0L</td><td class='num'>100%</td>
-<td class='dim'>1</td>
-</tr>
-<tr class='bronze-row'>
-<td class='rank bronze'>03</td>
+<tr class=''>
+<td class='rank'>10</td>
 <td><span class='pname'>&#197;˜93&#196;œ</span></td>
 <td><span class='ttag'></span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>208</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -390,7 +454,33 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='dim'>1</td>
 </tr>
 <tr class=''>
-<td class='rank'>04</td>
+<td class='rank'>11</td>
+<td><span class='pname'>urbaybrae</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>241</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
+<td class='hi'>1</td><td class='num'>1</td><td class='num'>1</td>
+<td class='num'>4</td><td class='num'>25%</td>
+<td class='num'>1.00</td><td class='num'>1.00</td><td class='num'>366</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>1W 0L</td><td class='num'>100%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>12</td>
+<td><span class='pname'>SpeedTumor</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>198</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
+<td class='hi'>1</td><td class='num'>0</td><td class='num'>1</td>
+<td class='num'>5</td><td class='num'>20%</td>
+<td class='num'>1.00</td><td class='num'>1.00</td><td class='num'>359</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>13</td>
 <td><span class='pname'>Slingin_Six</span></td>
 <td><span class='ttag'></span></td>
 <td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>177</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
@@ -401,30 +491,40 @@ footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:2
 <td class='num'>0</td><td class='num'>0%</td>
 <td class='num'>0W 1L</td><td class='num'>0%</td>
 <td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>14</td>
+<td><span class='pname'>Xnvy</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>22</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
+<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
+<td class='num'>2</td><td class='num'>0%</td>
+<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>110</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>1W 0L</td><td class='num'>100%</td>
+<td class='dim'>1</td>
+</tr>
+<tr class=''>
+<td class='rank'>15</td>
+<td><span class='pname'>Scout</span></td>
+<td><span class='ttag'></span></td>
+<td><span class='mr'><span class='mr-num' style='color:#aaaaaa'>0</span><span class='mr-tag' style='color:#aaaaaa;border:1px solid #aaaaaa55;background:#aaaaaa12'>DEVELOPING</span></span></td>
+<td class='hi'>0</td><td class='num'>0</td><td class='num'>0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0.00</td><td class='num'>0.00</td><td class='num'>0</td>
+<td class='num'>0</td><td class='num'>0</td><td class='num pos'>+0</td>
+<td class='num'>0</td><td class='num'>0%</td>
+<td class='num'>0W 1L</td><td class='num'>0%</td>
+<td class='dim'>1</td>
 </tr></tbody>
 </table></div></section>
 <section class='sec' id='tab-upcoming'><p style='color:var(--tx3);padding:80px;text-align:center;font-family:Share Tech Mono,monospace;letter-spacing:3px;font-size:12px'>NO UPCOMING TOURNAMENT ANNOUNCED YET — STAY TUNED</p></section>
-<section class='sec' id='tab-archive'><div class='sh'>Tournament Archive</div>
-<div class='arc-item'>
-  <div class='arc-hdr' id='ah-1' onclick='toggleArc(1)'>
-    <div>
-      <div class='arc-title'>test</div>
-      <div class='arc-meta'>SingleElimination · 0 games · 0 players · Mar 2026</div>
-    </div>
-    <div class='arc-right'><div class='chevron'>›</div></div>
-  </div>
-  <div class='arc-body' id='ab-1'>
-    
-    <div class='sh' style='font-size:9px'>Motion Rating™ Leaderboard</div>
-    <div class='tw'><table>
-    <thead><tr><th>#</th><th>Player</th><th>Motion Rating</th><th>Goals</th><th>Assists</th><th>Saves</th><th>Acc%</th><th>GP</th></tr></thead>
-    <tbody></tbody></table></div>
-  </div>
-</div></section>
+<section class='sec' id='tab-archive'><p style='color:var(--tx3);padding:80px;text-align:center;font-family:Share Tech Mono,monospace;letter-spacing:3px;font-size:12px'>NO ARCHIVED TOURNAMENTS YET</p></section>
 
 <footer>
   <div class='ft-logo'>MOTI<span>ON</span></div>
-  <div class='ft-meta'>Motion Rating™ &nbsp;·&nbsp; Updated March 11, 2026 · 19:57 UTC &nbsp;·&nbsp; Motion Tournament Series</div>
+  <div class='ft-meta'>Motion Rating™ &nbsp;·&nbsp; Updated March 11, 2026 · 20:07 UTC &nbsp;·&nbsp; Motion Tournament Series</div>
 </footer>
 
 <script>
